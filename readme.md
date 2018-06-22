@@ -26,6 +26,11 @@ Ya que hubo un empate entre la opción 1 y la 3, optamos por la opción 3.
 ## Solución al problema
 Al crear una red social, será mas fácil para el usuario compartir datos específicos con sus clientes y/o proveedores; donde se tenga a la vista un calendario laboral de los distintos países con los que se tiene contacto, el tipo de cambio de la moneda con la que se trabaja, y la agenda de contactos con la opción de guardar en favoritos. También se puede ver lo que otros contactos o empresas comparten, para estar al tanto de las novedades. 
 
+### Vista de inicio de sesión
 ![mockups](assets/images/ux/iPhone-6-7-8–2.png)
+
+### Vista del perfil de otra persona con su tarjeta de contacto y el timeline
 ![mockups](assets/images/ux/iPhone-6-7-8–1.png)
+
+### Vista del propio perfil con las aplicaciones favoritas y contactos favoritos
 ![mockups](assets/images/ux/iPhone-6-7-8–3.png)
