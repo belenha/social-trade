@@ -1,0 +1,74 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modificando el ancho del container */
+.container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  @media only screen and (min-width: 401px) {
+    .container {
+      width: 85%;
+    }
+    .mariana{
+        height: auto;
+        position: relative;
+        right: 15px;
+        top: 12px;
+        width: 15%;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+    .mariana{
+        height: auto;
+        position: relative;
+        right: 15px;
+        top: 12px;
+        width: 15%;
+    }
+  }
+
+/* estilo del header   */
+
+.top{
+    background-color: #90AFC5;
+    height: 100px;
+}
+
+.logoST{
+    height: auto;
+    left: 15px;
+    position: relative;
+    top: 37px;
+    width: 37%;
+}
+.mariana{
+    height: auto;
+    position: relative;
+    right: 15px;
+    top: 12px;
+    width: 15%;
+}
+
+hr{
+    border: 1px solid #783929;
+    position: relative;
+}
+
+/* estilo del contacto */
+
+
+/* estilo de timeline */
+textarea.materialize-textarea{
+    border: 1px solid#336B87;
+}
+
+
+
