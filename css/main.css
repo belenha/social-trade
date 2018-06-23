@@ -1,0 +1,124 @@
+body{
+    background-color: #90AFC5;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Modificando el ancho del container */
+.container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  @media only screen and (min-width: 401px) {
+    .container {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
+
+  /* estilos generales */
+  p{
+    color: #AFCEE4;
+  }
+
+/* Acomodando el logo */
+.logo{
+    position: relative;
+    top: 60px;
+
+}
+/* Posicionando el Inicia Sesión */
+.logIn{
+    position: relative;
+    top: 100px;
+}
+
+h5{
+    font-weight: 600;
+}
+
+/* Estilo al área de los input */
+
+.emailPass{
+    position: relative;
+    top: 100px;
+}
+
+.emailPass p{
+    font-size: 19px;
+    margin: 2px 0px;
+}
+input[type=email]:not(.browser-default){
+    background-color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+input[type=password]:not(.browser-default){
+    background-color: white;
+    border: none;
+    margin-bottom: 20px;
+}
+
+/* estilo a la parte del boton de iniciar sesion */
+.enter{
+    position: relative;
+    top: 100px;
+}
+
+.underline{
+    text-decoration-line: underline;
+}
+
+.bluebtn{
+    background-color: #336B87;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+}
+
+/* estilo al checkbox */
+
+.checkBox{
+    position: relative;
+    top: 90px;
+}
+
+span:not(.lever):before,[type="checkbox"]:not(.filled-in){
+    /* background-color: white; */
+    border: 2px solid white !important;  
+    /* no aparece la palomita */
+}
+.remember{
+    color: #336B87;
+}
+hr{
+    border: 1px solid #783929;
+    position: relative;
+    top: 150px;
+}
+
+/* estilo a la parte de abajo */
+
+.bottom{
+    position: relative;
+    top: 130px;
+}
+
+.facebook{
+    height: auto;
+    width: 10%;
+}
+
+.lastSpan{
+    color: #AFCEE4;
+    font-size: 20px;
+    font-weight: 600;
+    left: 10px;
+    position: relative;
+    bottom: 17px;
+}

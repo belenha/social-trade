@@ -30,6 +30,7 @@ Al crear una red social, será mas fácil para el usuario compartir datos espec�
 ![mockups](assets/images/ux/iPhone-6-7-8–2.png)
 
 ### Vista del perfil de otra persona con su tarjeta de contacto y el timeline
+
 ![mockups](assets/images/ux/iPhone-6-7-8–1.png)
 
 ### Vista del propio perfil con las aplicaciones favoritas y contactos favoritos
