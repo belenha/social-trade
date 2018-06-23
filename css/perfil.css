@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* Modificando el ancho del container */
+.container {
+    margin: 0 auto;
+    width: 90%;
+  }
+  @media only screen and (min-width: 401px) {
+    .container {
+      width: 85%;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
+
+    /* estilo del header */
+.header{
+    background-color: #90AFC5;
+    height: fit-content;
+
+}
+
+.mariana{
+    border: 3px solid white;
+    height: auto;
+    max-width: 70%;
+    position: relative;
+    top: 18px;
+    width: 30%;
+}
