@@ -41,8 +41,40 @@ body{
 }
 
 .bottomBtns{
-    margin: 0px 3px;
+    font-weight: 400;
     padding: 3px 7px;
+}
+
+.follow{
+    border: 1px solid #336b87;
+    color: #336B87;
+}
+
+.add{
+    border: 1px solid #336B87;
+    background-color: #336B87;
+}
+
+.description p{
+    font-size: 14px;
+    line-height: 1em;
+    margin: 5px 0px;
+}
+
+.titles{
+    color: #783929;
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.contactIcon img{
+    height: auto;
+    margin: 2px;
+    max-width: 33px;
+
 }
 
 hr{
