@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Inicia Sesión</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
@@ -29,11 +30,11 @@
             <div class="col l6 m8 s10">
                 <div>
                     <p>Email</p>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="txtEmail">
                 </div>
                 <div>
                     <p>Contraseña</p>
-                    <input type="password" name="" id="">
+                    <input type="password" name="" id="txtPassword">
                 </div>
             </div>
             <div class="col l3 m2 s1 "></div>
@@ -43,7 +44,8 @@
                 <p class="underline center-align">¿Olvidaste tu contraseña?</p>
             </div>
             <div class="center-align">
-                 <button class="bluebtn z-depth-0 btn waves-effect waves-light" type="submit" name="action">Iniciar sesión</button>
+                 <button id="log-in" class="bluebtn z-depth-0 btn waves-effect waves-light" type="submit" name="action">Iniciar sesión</button>
+                 <button class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action" data-target="modal-signup">Registrarse</button>
             </div>
         </div>
         <div class="checkBox row left">
@@ -65,7 +67,53 @@
             </div>
         </div>
     </main>
+    <!-- Modal Structure -->
+    <div id="modal-signup" class="modal">
+        <div>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><i class="material-icons">close</i></a>
+        </div>
+        <div class="modal-content">
+          <h6>Escribe tus datos para completar tu registro!</h6>
+          <div class="row">
+                <div class="col l6 m8 s10">
+                    <div>
+                        <p>Email</p>
+                        <input type="email" name="" id="signupEmail">
+                    </div>
+                    <div>
+                        <p>Contraseña</p>
+                        <input type="password" name="" id="signupPassword">
+                    </div>
+                </div>
+                <div class="col l3 m2 s1 "></div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
+        </div>
+    </div>
+
+
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC5b6bct9raZrWocP21KEwyhfRm8XnfgJo",
+            authDomain: "social-trade-e67c8.firebaseapp.com",
+            databaseURL: "https://social-trade-e67c8.firebaseio.com",
+            projectId: "social-trade-e67c8",
+            storageBucket: "",
+            messagingSenderId: "1087956485756"
+        };
+        firebase.initializeApp(config);   
+    </script>
+    <script src="js/app.js"></script>  
 </body>
 </html>
