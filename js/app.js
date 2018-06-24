@@ -29,8 +29,11 @@
         });
 
         var user = firebase.auth().currentUser;
-            getUser(user);
-        
+        if(user != null){
+            //user is signed in
+            window.location.href = 'paginas/perfil.html?uid='+ user.uid;
+            console.log(user);
+        }         
   });
 
   //Agregar evento a Sign-up
@@ -45,21 +48,7 @@
   });
 
   // Obtener el usuario con sesion activa
- 
-  function getUser(user){
 
-  firebase.auth().onAuthStateChanged(function(user) {
-      if(user != null){
-          //user is signed in
-          window.location.href = 'paginas/perfil.html?uid='+ user.uid;
-          console.log(user);
-      } else{
-          //console.log('not logged') 
-          //No user us signed in
-          alert("Cuenta no registrada. Por favor registrate")
-      }
-  })
-};
 
   //Modal de registro
   $(document).ready(function(){

@@ -12,36 +12,34 @@
 </head>
 <body>
     <header class="header">
+        <nav>
+            <div class="nav-wrapper  cyan darken-4">
+                <a href="#" class="brand-logo left">Logo</a>
+                    <ul id="nav-mobile" class="right">
+                        <li><a id="log-out" >Cerrar Sesión</a></li>   
+                    </ul>
+                </div>
+        </nav>                    
+
         <div class="center-align">
             <a class="down btn tooltipped btnPhoto btn-floating btn-large waves-effect waves-light" data-position="top" data-tooltip="Click para agregar foto">
                 <i class="material-icons">add</i>
             </a>
             <p class="down">Agrega tu foto</p>
             <!-- <img class="mariana circle responsive-img" src="../assets/images/ux/Mariana_Costa.jpg" alt=""> -->
-            <h6 class="name down">Ingresa tu nombre</h6>
+            <h6 id="nameUser" class="name down">Tu nombre</h6>
             <div class="row down">
                 <form class="col s12">
-                    <div class="row center-align">
-                        <div class="input-field col s6 m6 l6">
-                            <input id="first_name" type="text" class="validate">
-                            <label class="white-text" for="first_name">First Name</label>
-                        </div>
-                        <div class="input-field col s6 m6 l6">
-                            <input id="last_name" type="text" class="validate">
-                            <label class="white-text" for="last_name">Last Name</label>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="input-field col s6">
-                            <input id="position" type="text" class="validate">
-                            <label class="white-text" for="first_name">Puesto</label>
+                            <p class="white-text" for="first_name">Puesto</p>
                         </div>
                         <div class="input-field col s6">
-                            <input id="empresa" type="text" class="validate">
-                            <label class="white-text" for="last_name">Empresa</label>
+                            <p class="white-text" for="last_name">Empresa</p>
                         </div>
                     </div>
-    
+                    <button class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action" data-target="edit-profile">Editar Perfil</button>
+   
             </div>
     </header>
     <main class="container">
@@ -144,8 +142,60 @@
         </div>
     </main>
 
+      <!-- Modal Structure -->
+      <div id="edit-profile" class="modal">
+            <div>
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><i class="material-icons">close</i></a>
+            </div>
+            <div class="modal-content">
+                    <h6 class="name down">Ingresa tu nombre</h6>
+                    <div class="row down">
+                        <form class="col s12">
+                            <div class="row center-align">
+                                <div class="input-field col s6 m6 l6">
+                                    <input id="first_name" type="text" class="validate">
+                                    <label class="white-text" for="first_name">First Name</label>
+                                </div>
+                                <div class="input-field col s6 m6 l6">
+                                    <input id="last_name" type="text" class="validate">
+                                    <label class="white-text" for="last_name">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="position" type="text" class="validate">
+                                    <label class="white-text" for="first_name">Puesto</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="empresa" type="text" class="validate">
+                                    <label class="white-text" for="last_name">Empresa</label>
+                                </div>
+                            </div>
+            
+                    </div>
+                    </div>
+            <div class="modal-footer">
+                <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
+            </div>
+        </div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-storage.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyC5b6bct9raZrWocP21KEwyhfRm8XnfgJo",
+            authDomain: "social-trade-e67c8.firebaseapp.com",
+            databaseURL: "https://social-trade-e67c8.firebaseio.com",
+            projectId: "social-trade-e67c8",
+            storageBucket: "",
+            messagingSenderId: "1087956485756"
+        };
+        firebase.initializeApp(config);   
+    </script>
     <script src="../js/perfil.js"></script>
 </body>
 </html>
