@@ -21,6 +21,18 @@ body{
   }
 
     /* estilo del header */
+
+.navigationBar{
+  background-color: #336B87;
+}
+
+.logo{
+  height: auto;
+  left: 8px;
+  position: relative;
+  top: 5px;
+  width: 70%;
+}
 .header{
     background-color: #90AFC5;
     height: fit-content;
@@ -34,15 +46,21 @@ body{
   position: relative;
   top: 25px;
 }
-/* .input-field{
-  padding: 0 !important;
-} */
+
+.bluebtn{
+  background-color: #336B87;
+}
 
 input[type=text]:not(.browser-default){
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #336B87;
 }
 
 /* estilo a la parte de contactos */
+.principal{
+  position: relative;
+  top: 20px;
+}
+
 .contacts{
   width: 50%;
   height: auto;
