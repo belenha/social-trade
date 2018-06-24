@@ -122,3 +122,8 @@ hr{
     position: relative;
     bottom: 17px;
 }
+
+/* Modal */
+.modal{
+    background-color: #90AFC5;
+}
