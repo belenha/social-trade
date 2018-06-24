@@ -24,14 +24,27 @@ body{
 .header{
     background-color: #90AFC5;
     height: fit-content;
-
+    width: 100%;
+}
+.btnPhoto{
+  background-color: #336B87;
 }
 
-.mariana{
-    border: 3px solid white;
-    height: auto;
-    max-width: 70%;
-    position: relative;
-    top: 18px;
-    width: 30%;
+.down{
+  position: relative;
+  top: 25px;
 }
+/* .input-field{
+  padding: 0 !important;
+} */
+
+input[type=text]:not(.browser-default){
+  border-bottom: 1px solid white;
+}
+
+/* estilo a la parte de contactos */
+.contacts{
+  width: 50%;
+  height: auto;
+}
+
