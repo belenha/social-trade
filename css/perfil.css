@@ -32,18 +32,19 @@ body{
 
 .down{
   position: relative;
-  top: 20px;
+  top: 25px;
 }
+/* .input-field{
+  padding: 0 !important;
+} */
 
 input[type=text]:not(.browser-default){
   border-bottom: 1px solid white;
 }
-/* .mariana{
-    border: 3px solid white;
-    height: auto;
-    max-width: 70%;
-    position: relative;
-    top: 18px;
-    width: 30%;
-} */
+
+/* estilo a la parte de contactos */
+.contacts{
+  width: 50%;
+  height: auto;
+}
 
