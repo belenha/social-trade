@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Perfil</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,600" rel="stylesheet">
     <link rel="stylesheet" href="../css/perfil.css">
@@ -12,18 +13,59 @@
 <body>
     <header class="header">
         <div class="center-align">
-            <img class="mariana circle responsive-img" src="../assets/images/ux/Mariana_Costa.jpg" alt="">
-            <h5 class="name">Mariana Costa</h5>
-            <p>CEO & Co-founder Laboratoria</p>
-        </div>
+            <a class="down btn tooltipped btnPhoto btn-floating btn-large waves-effect waves-light" data-position="top" data-tooltip="Click para agregar foto">
+                <i class="material-icons">add</i>
+            </a>
+            <p class="down">Agrega tu foto</p>
+            <!-- <img class="mariana circle responsive-img" src="../assets/images/ux/Mariana_Costa.jpg" alt=""> -->
+            <h6 class="name down">Ingresa tu nombre</h6>
+            <div class="row down">
+                <form class="col s12">
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="first_name" type="text" class="validate">
+                            <label class="white-text" for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="last_name" type="text" class="validate">
+                            <label class="white-text" for="last_name">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="position" type="text" class="validate">
+                            <label class="white-text" for="first_name">Puesto</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="empresa" type="text" class="validate">
+                            <label class="white-text" for="last_name">Empresa</label>
+                        </div>
+                    </div>
+    
+            </div>
     </header>
     <main class="container">
-        aplicaciones favoritas
-
-        contactos y buscador de contactos
+        <!-- aplicaciones favoritas -->
+        <h4 class="white-text">Aplicaciones favoritas</h4>
+        <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                  <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                </li>
+              </ul>
+        
+        <!-- contactos y buscador de contactos -->
     </main>
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="../js/perfil.js"></script>
 </body>
