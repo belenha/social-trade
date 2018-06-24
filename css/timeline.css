@@ -14,47 +14,35 @@ body{
     .container {
       width: 85%;
     }
-    .mariana{
-        height: auto;
-        position: relative;
-        right: 15px;
-        top: 12px;
-        width: 15%;
-    }
   }
   @media only screen and (min-width: 993px) {
     .container {
       width: 70%;
     }
-    .mariana{
-        height: auto;
-        position: relative;
-        right: 15px;
-        top: 12px;
-        width: 15%;
-    }
   }
+
+/* estilo de la barra de navegación */
+
+.navbar{
+    background-color: #336B87;
+    /* width: 100%; */
+}
+
+.logo{
+    height: auto;
+    width: 70%;
+}
 
 /* estilo del header   */
 
-.top{
-    background-color: #90AFC5;
-    height: 100px;
+.cardInfo{
+    position: relative;
+    top: 20px;
 }
 
-.logoST{
-    height: auto;
-    left: 15px;
-    position: relative;
-    top: 37px;
-    width: 37%;
-}
-.mariana{
-    height: auto;
-    position: relative;
-    right: 15px;
-    top: 12px;
-    width: 15%;
+.bottomBtns{
+    margin: 0px 3px;
+    padding: 3px 7px;
 }
 
 hr{
