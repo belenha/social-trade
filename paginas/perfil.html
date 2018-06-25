@@ -46,8 +46,8 @@
         </div>    
     </header>
     <main class="container principal">
+
         <!-- Seleccionar aplicaciones favoritas -->
-        <h6 class="center-align">Selecciona tus aplicaciones favoritas</h6>
         <div class="row">
             <div class="col s12">
               <ul class="tabs">
@@ -59,13 +59,27 @@
             </div>
         </div>
 
+        <!--Seccion Posts-->
+        <div class="row n-margin">
+            <form class="col s12 n-margin">
+                <div class="input-field col s9">
+                    <textarea id="newPost" class="materialize-textarea" data-length="120"></textarea>
+                    <label for="newPost">Qué estas pensando?</label>
+                </div>
+                <button class="btn-flat n-margin right" type="submit" name="action">
+                        <i class="material-icons right n-margin">send</i>
+                </button>    
+            </form>
+        </div>
+
+
         <div class="divider"></div>
         
         <!--Seccion de fotos-->
         <section class="container">
             <form class= "row" action="#">
                 <div class="file-field input-field">
-                    <div class="btn">
+                    <div class="btn-flat left">
                         <span><i class="material-icons">add</i></span>
                         <input id="add-photo" value="upload" type="file">
                     </div>
@@ -84,7 +98,7 @@
         <!-- contactos y buscador de contactos -->
         <div class="container">
         <div class="row">
-            <h6 class="col l6 m6 s3 left">Contactos</h6>
+            <h6 class="col l6 m6 s12 left">Directorio de Contactos</h6>
             <div class="input-field col l6 m6 s12">
                 <input id="search" type="search" required>
                 <label class="label-icon" for="search"><i class="material-icons">search</i></label>
@@ -118,13 +132,22 @@
             </div>
             <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-18.png" alt="">
-                <h6>nombre</h6>
+                <span>nombre</span>
             </div>
             <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-19.png" alt="">                    <h6>nombre</h6>
             </div>
         </div>  
         </div>
+
+        <!-- Post Publicados-->
+        <section id="boardPost" class="container">
+            <div class="row">
+                <div class="col s12">
+                    <p class="post"></p>
+                </div>
+            </div>
+        </section>
     </main>
 
       <!-- Modal Structure -->
@@ -189,6 +212,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-database.js"></script>
     <script>
         // Initialize Firebase
         var config = {
