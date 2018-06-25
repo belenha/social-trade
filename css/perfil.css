@@ -31,7 +31,7 @@ body{
   left: 8px;
   position: relative;
   top: 5px;
-  width: 70%;
+  max-width: 60%;
 }
 .header{
     background-color: #90AFC5;
@@ -51,10 +51,24 @@ body{
   background-color: #336B87;
 }
 
-input[type=text]:not(.browser-default){
+/* input[type=text]:not(.browser-default){
   border-bottom: 1px solid #336B87;
+} */
+.tabs .tab a:hover, .tabs .tab a.active{
+  color: #336B87
 }
 
+.tabs .tab a{
+  color: #336B87;
+}
+
+.tabs .indicator{
+  background-color: #90AFC5;
+}
+
+.tabs .tab a:focus.active{
+  background-color: rgba(144, 175, 197, 0.6)
+}
 /* estilo a la parte de contactos */
 .principal{
   position: relative;

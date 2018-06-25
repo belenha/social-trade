@@ -3,8 +3,12 @@ $(document).ready(function(){
   });
 
 $(document).ready(function(){
-  $('.collapsible').collapsible();
+    $('.tabs').tabs();
 });
+
+// $(document).ready(function(){
+//   $('.collapsible').collapsible();
+// });
 
 //Evento de cerrar sesión
 var btnLogout = document.getElementById("log-out");
