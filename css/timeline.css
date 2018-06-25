@@ -14,47 +14,67 @@ body{
     .container {
       width: 85%;
     }
-    .mariana{
-        height: auto;
-        position: relative;
-        right: 15px;
-        top: 12px;
-        width: 15%;
-    }
   }
   @media only screen and (min-width: 993px) {
     .container {
       width: 70%;
     }
-    .mariana{
-        height: auto;
-        position: relative;
-        right: 15px;
-        top: 12px;
-        width: 15%;
-    }
   }
+
+/* estilo de la barra de navegación */
+
+.navbar{
+    background-color: #336B87;
+    /* width: 100%; */
+}
+
+.logo{
+    height: auto;
+    width: 70%;
+}
 
 /* estilo del header   */
 
-.top{
-    background-color: #90AFC5;
-    height: 100px;
+.cardInfo{
+    position: relative;
+    top: 20px;
 }
 
-.logoST{
-    height: auto;
-    left: 15px;
-    position: relative;
-    top: 37px;
-    width: 37%;
+.bottomBtns{
+    font-weight: 400;
+    padding: 3px 7px;
 }
-.mariana{
+
+.follow{
+    border: 1px solid #336b87;
+    color: #336B87;
+}
+
+.add{
+    border: 1px solid #336B87;
+    background-color: #336B87;
+}
+
+.description p{
+    font-size: 14px;
+    line-height: 1em;
+    margin: 5px 0px;
+}
+
+.titles{
+    color: #783929;
+    font-style: italic;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.contactIcon img{
     height: auto;
-    position: relative;
-    right: 15px;
-    top: 12px;
-    width: 15%;
+    margin: 2px;
+    max-width: 33px;
+
 }
 
 hr{

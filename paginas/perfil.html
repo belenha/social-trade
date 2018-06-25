@@ -12,34 +12,40 @@
 </head>
 <body>
     <header class="header">
-        <nav>
-            <div class="nav-wrapper  cyan darken-4">
-                <a href="#" class="brand-logo left">Logo</a>
-                    <ul id="nav-mobile" class="right">
-                        <li><a id="log-out" >Cerrar Sesión</a></li>   
-                    </ul>
-                </div>
-        </nav>                    
-
+        <nav class="navigationBar">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">
+                    <img class="logo" src="../assets/images/imagen-logo.png" alt="">
+                </a>
+                <ul id="nav-mobile" class="right">
+                    <li>
+                        <a id="log-out">Cerrar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
         <div class="center-align">
             <img  id="profile-photo" src="../assets/images/users/user-1.png" class= "responsive-img" alt="profile-photo" width="30%">
             <!-- <img class="mariana circle responsive-img" src="../assets/images/ux/Mariana_Costa.jpg" alt=""> -->
             <h6 id="nameUser" class="name down">Tu nombre</h6>
             <div class="row down">
                 <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s6">
-                            <p class="white-text" for="first_name">Puesto</p>
-                        </div>
-                        <div class="input-field col s6">
-                            <p class="white-text" for="last_name">Empresa</p>
-                        </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <p class="white-text" for="first_name">Puesto</p>
                     </div>
-                    <button class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action" data-target="edit-profile">Editar Perfil</button>
-   
+                    <div class="input-field col s4">
+                        <p class="white-text" for="last_name">Empresa</p>
+                    </div>
+                    <div class="input-field col s4">
+                        <i class="material-icons white-text">location_on</i> 
+                    </div>
+                </div>
+                <button class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action" data-target="edit-profile">Editar Perfil</button>
             </div>
+        </div>    
     </header>
-    <main class="container">
+    <main class="container principal">
         <!-- Seleccionar aplicaciones favoritas -->
         <h6 class="center-align">Selecciona tus aplicaciones favoritas</h6>
         <ul class="collapsible">
@@ -181,12 +187,22 @@
                             </div>
             
                     </div>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="position" type="text" class="validate">
+                            <label class="white-text" for="first_name">Puesto</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="empresa" type="text" class="validate">
+                            <label class="white-text" for="last_name">Empresa</label>
+                        </div>
                     </div>
-            <div class="modal-footer">
-                <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
             </div>
         </div>
-
+        <div class="modal-footer">
+            <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>

@@ -106,17 +106,17 @@ hr{
 
 .bottom{
     position: relative;
-    top: 130px;
+    top: 150px;
 }
 
 .facebook{
     height: auto;
-    width: 10%;
+    max-width: 40px;
 }
 
 .lastSpan{
     color: #AFCEE4;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 600;
     left: 10px;
     position: relative;
