@@ -22,10 +22,7 @@
         </nav>                    
 
         <div class="center-align">
-            <a class="down btn tooltipped btnPhoto btn-floating btn-large waves-effect waves-light" data-position="top" data-tooltip="Click para agregar foto">
-                <i class="material-icons">add</i>
-            </a>
-            <p class="down">Agrega tu foto</p>
+            <img  id="profile-photo" src="../assets/images/users/user-1.png" class= "responsive-img" alt="profile-photo" width="30%">
             <!-- <img class="mariana circle responsive-img" src="../assets/images/ux/Mariana_Costa.jpg" alt=""> -->
             <h6 id="nameUser" class="name down">Tu nombre</h6>
             <div class="row down">
@@ -147,9 +144,20 @@
             <div>
                 <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><i class="material-icons">close</i></a>
             </div>
-            <div class="modal-content">
-                    <h6 class="name down">Ingresa tu nombre</h6>
+            <div class="modal-content cyan darken-2">
+                    <h6 class="name down">Edita tu Perfil</h6>
                     <div class="row down">
+                            <form class= "row" action="#">
+                                    <div class="file-field input-field">
+                                      <div class="btn">
+                                        <span>Foto</span>
+                                        <input id="file-photo" value="upload" type="file">
+                                      </div>
+                                      <div class="file-path-wrapper">
+                                        <input class="file-path validate" type="text">
+                                      </div>
+                                    </div>
+                                  </form>
                         <form class="col s12">
                             <div class="row center-align">
                                 <div class="input-field col s6 m6 l6">
@@ -191,7 +199,7 @@
             authDomain: "social-trade-e67c8.firebaseapp.com",
             databaseURL: "https://social-trade-e67c8.firebaseio.com",
             projectId: "social-trade-e67c8",
-            storageBucket: "",
+            storageBucket: "gs://social-trade-e67c8.appspot.com",
             messagingSenderId: "1087956485756"
         };
         firebase.initializeApp(config);   
