@@ -1,14 +1,4 @@
-$(document).ready(function(){
-    $('.tooltipped').tooltip();
-  });
-
-$(document).ready(function(){
-    $('.tabs').tabs();
-});
-
-// $(document).ready(function(){
-//   $('.collapsible').collapsible();
-// });
+$('#profile-photo').src()
 
 //Evento de cerrar sesión
 var btnLogout = document.getElementById("log-out");
@@ -17,10 +7,6 @@ btnLogout.addEventListener("click", e => {
     window.location.href = '../index.html';
 });
 
- //Modal de registro
-$(document).ready(function(){
-    $('.modal').modal();
-});
 
 // Subir foto de perfil
 var storage = firebase.storage();
@@ -100,17 +86,36 @@ addPhoto.addEventListener("change", function(e){
     }
 });
 
-var database = firebase.database();
-var userId = firebase.auth().currentUser.uid;
-var body = document.getElementById("newPost")
+var templatePost =   '<div class="row">' +
+                     '<div class="col s12 post">'+
+                        '<span >__username__</span>'+
+                        '<p >__post__</p>'+
+                        '</div>' +
+                    '</div>'
 
-function writeNewPost(userId, username, body) {
+var templateB =   '<div class="col s4 m6 l3">'+
+                    '<img class="contacts responsive-img" src="__photo___">' +
+                    '<span>nombre</span>'+
+                   '</div>'
+
+var database = firebase.database();
+//var userId = firebase.auth().currentUser.uid;
+
+$("#enter-post").click(function(){
+    var post = $("#newPost").val();
+    var username = $("#nameUser").html();
+    var userId = firebase.auth().currentUser.uid;
+    var finalTemplatePost= "";
+    writeNewPost(userId,username,post);
+    $("#newPost").val("");
+})
+
+function writeNewPost(userId, username, post) {
     // A post entry.
-    var postData = {
+   /* var postData = {
       author: username,
-      uid: uid,
+      uid: userId,
       body: body,
-      title: title,
     };
 
     // Get a key for a new Post.
@@ -119,27 +124,22 @@ function writeNewPost(userId, username, body) {
     // Write the new post's data simultaneously in the posts list and the user's post list.
     var updates = {};
     updates['/posts/' + newPostKey] = postData;
-    updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+    updates['/user-posts/' + userId + '/' + newPostKey] = postData;
   
-    return firebase.database().ref().update(updates);
+    return firebase.database().ref().update(updates);*/
+
+    finalTemplatePost = templatePost.replace("__username__", username).replace("__post__", post);
+     $("#boardPost").append(finalTemplatePost);
+
   }
-
-  var templateA =   '<div class="row">' +
-                        '<div class="col s12">'+
-                            '<p class="post">__post__</p>'+
-                        '</div>' +
-                    '</div>'
-
-  var templateB =   '<div class="col s4 m6 l3">'+
-                        '<img class="contacts responsive-img" src="__photo___">' +
-                        '<span>nombre</span>'+
-                    '</div>'
-                
+              
 
 
 
 
 $(document).ready(function() {
     $('input#input_text, textarea#textarea2').characterCounter();
-  });
-
+    $('.tooltipped').tooltip();
+    $('.tabs').tabs();
+    $('.modal').modal();
+});
