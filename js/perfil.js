@@ -134,7 +134,7 @@ function writeNewPost(userId, username, body) {
                         '<img class="contacts responsive-img" src="__photo___">' +
                         '<span>nombre</span>'+
                     '</div>'
-                    */
+                
 
 
 
