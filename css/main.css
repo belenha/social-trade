@@ -89,10 +89,10 @@ input[type=password]:not(.browser-default){
 }
 
 span:not(.lever):before,[type="checkbox"]:not(.filled-in){
-    /* background-color: white; */
+    /* background-color: white; */ 
     border: 2px solid white !important;  
-    /* no aparece la palomita */
 }
+
 .remember{
     color: #336B87;
 }

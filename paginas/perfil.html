@@ -30,14 +30,17 @@
             <div class="row down">
                 <form class="col s12">
                 <div class="row">
-                    <div class="input-field col s4">
-                        <p class="white-text" for="first_name">Puesto</p>
+                    <div class="input-field col s3">
+                        <p class="white-text" for="position">Puesto</p>
                     </div>
-                    <div class="input-field col s4">
-                        <p class="white-text" for="last_name">Empresa</p>
+                    <div class="input-field col s3">
+                        <p class="white-text" for="company">Empresa</p>
                     </div>
-                    <div class="input-field col s4">
-                        <i class="material-icons white-text">location_on</i> 
+                    <div class="input-field col s3">
+                        <p class="white-text" for="ubication">Ubicación</p>    
+                    </div>
+                    <div class="input-field col s3">
+                        <p class="white-text" for="telephone">Teléfono</p>
                     </div>
                 </div>
                 <button class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action" data-target="edit-profile">Editar Perfil</button>
@@ -128,10 +131,11 @@
             </div>
             <div class="col s6 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-18.png" alt="">
-                <span>nombre</span>
+                <h6>nombre</h6>
             </div>
             <div class="col s6 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user-19.png" alt="">                    <h6>nombre</h6>
+                <img class="contacts responsive-img" src="../assets/images/users/user-19.png" alt="">   
+                <h6>nombre</h6>
             </div>
         </div>  
         </div>
@@ -147,45 +151,36 @@
     </main>
 
       <!-- Modal Structure -->
-      <div id="edit-profile" class="modal">
-            <div>
-                <a href="#!" class="modal-close waves-effect waves-green btn-flat right"><i class="material-icons">close</i></a>
-            </div>
-            <div class="modal-content cyan darken-2">
-                    <h6 class="name down">Edita tu Perfil</h6>
-                    <div class="row down">
-                            <form class= "row" action="#">
-                                    <div class="file-field input-field">
-                                      <div class="btn">
-                                        <span>Foto</span>
-                                        <input id="file-photo" value="upload" type="file">
-                                      </div>
-                                      <div class="file-path-wrapper">
-                                        <input class="file-path validate" type="text">
-                                      </div>
-                                    </div>
-                                  </form>
-                        <form class="col s12">
-                            <div class="row center-align">
-                                <div class="input-field col s6 m6 l6">
-                                    <input id="first_name" type="text" class="validate">
-                                    <label class="white-text" for="first_name">First Name</label>
-                                </div>
-                                <div class="input-field col s6 m6 l6">
-                                    <input id="last_name" type="text" class="validate">
-                                    <label class="white-text" for="last_name">Last Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s6">
-                                    <input id="position" type="text" class="validate">
-                                    <label class="white-text" for="first_name">Puesto</label>
-                                </div>
-                                <div class="input-field col s6">
-                                    <input id="empresa" type="text" class="validate">
-                                    <label class="white-text" for="last_name">Empresa</label>
-                                </div>
-                            </div>         
+    <div id="edit-profile" class="modal">
+        <div>
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat right">
+                <i class="material-icons">close</i>
+            </a>
+        </div>
+        <div class="personalInformation modal-content">
+            <h6 class="name down white-text">Edita tu Perfil</h6>
+            <div class="row down">
+                <form class="row" action="#">
+                    <div class="file-field input-field">
+                        <div class="lightBlue btn">
+                            <span>Foto</span>
+                            <input id="file-photo" value="upload" type="file">
+                        </div>
+                        <div class="file-path-wrapper">
+                            <input class="file-path validate" type="text">
+                        </div>
+                    </div>
+                </form>
+                <form class="col s12">
+                    <div class="row center-align">
+                        <div class="input-field col s6 m6 l6">
+                            <input id="first_name" type="text" class="validate">
+                            <label class="white-text" for="first_name">First Name</label>
+                        </div>
+                        <div class="input-field col s6 m6 l6">
+                            <input id="last_name" type="text" class="validate">
+                            <label class="white-text" for="last_name">Last Name</label>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
@@ -196,12 +191,22 @@
                             <input id="empresa" type="text" class="validate">
                             <label class="white-text" for="last_name">Empresa</label>
                         </div>
+                        <div class="input-field col s6">
+                            <input id="position" type="text" class="validate">
+                            <label class="white-text" for="first_name">Teléfono</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="empresa" type="text" class="validate">
+                            <label class="white-text" for="last_name">País</label>
+                        </div>
                     </div>
+                </form>
             </div>
-            <div class="modal-footer">
-                    <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
-                </div>
         </div>
+        <div class="modal-footer">
+            <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
+        </div>
+    </div>
         
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

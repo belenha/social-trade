@@ -35,3 +35,6 @@ Al crear una red social, será mas fácil para el usuario compartir datos espec�
 
 ### Vista del propio perfil con las aplicaciones favoritas y contactos favoritos
 ![mockups](assets/images/ux/iPhone-6-7-8–3.png)
+
+## Resultado final
+[Social Trade](https://belenha.github.io/social-trade/. "Title")

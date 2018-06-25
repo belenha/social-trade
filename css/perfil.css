@@ -80,6 +80,8 @@ body{
   height: auto;
 }
 
+/* estilo a las imagenes */
+
 .frameImage{
   border: 1px solid #336B87;
   margin: 3px;
@@ -97,4 +99,14 @@ body{
 
 .post{
   border: 1px solid black;
+}
+
+/* estilo al modal */
+
+.personalInformation{
+  background-color: #336B87;
+}
+
+.lightBlue{
+  background-color: #90AFC5;
 }
