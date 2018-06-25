@@ -66,3 +66,14 @@ input[type=text]:not(.browser-default){
   height: auto;
 }
 
+.frameImage{
+  border: 1px solid #336B87;
+  margin: 3px;
+}
+
+.c-size{
+  height: 20vh;
+  overflow: scroll;
+  width: 100%;
+}
+

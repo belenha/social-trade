@@ -82,66 +82,68 @@
                 </div>
             </li>
         </ul>
+
+        <!--Seccion de fotos-->
+        <section class="container">
+            <form class= "row" action="#">
+                <div class="file-field input-field">
+                    <div class="btn">
+                        <span><i class="material-icons">add</i></span>
+                        <input id="add-photo" value="upload" type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Comparte fotos o videos">
+                    </div>
+                </div>
+            </form>
+            <div id="sectionPhotos" class="row c-size">
+                <img class="frameImage col s4 m6 l3 responsive-img" src="../assets/images/social-trade-logo.png">
+            </div>
+        </section>
+
         <!-- contactos y buscador de contactos -->
+        <div class="container">
         <div class="row">
             <h6 class="col l6 m6 s3 left">Contactos</h6>
-            <div class="input-field col l6 m6 s3">
-                <i class="material-icons right">search</i>
+            <div class="input-field col l6 m6 s12">
+                <input id="search" type="search" required>
+                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
             </div>
         </div>
-        <div class="row center-align">
-            <div class="col s12 m6 l3">
+        <div class="row center-align c-size">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-1.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-12.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-14.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-15.png" alt="">
                 <h6>nombre</h6>
             </div>
-        </div>
-        <div class="row center-align">
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-16.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-17.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
+            <div class="col s4 m6 l3">
                 <img class="contacts responsive-img" src="../assets/images/users/user-18.png" alt="">
                 <h6>nombre</h6>
             </div>
-            <div class="col s12 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user-19.png" alt="">
-                <h6>nombre</h6>
+            <div class="col s4 m6 l3">
+                <img class="contacts responsive-img" src="../assets/images/users/user-19.png" alt="">                    <h6>nombre</h6>
             </div>
-        </div>
-        <div class="row center-align">
-            <div class="col s12 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user-20.png" alt="">
-                <h6>nombre</h6>
-            </div>
-            <div class="col s12 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user-21.png" alt="">
-                <h6>nombre</h6>
-            </div>
-            <div class="col s12 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user-22.png" alt="">
-                <h6>nombre</h6>
-            </div>
-            <div class="col s12 m6 l3">
-                <img class="contacts responsive-img" src="../assets/images/users/user.png" alt="">
-                <h6>nombre</h6>
-            </div>
+        </div>  
         </div>
     </main>
 
@@ -184,8 +186,7 @@
                                     <input id="empresa" type="text" class="validate">
                                     <label class="white-text" for="last_name">Empresa</label>
                                 </div>
-                            </div>
-            
+                            </div>         
                     </div>
                     <div class="row">
                         <div class="input-field col s6">
@@ -198,11 +199,11 @@
                         </div>
                     </div>
             </div>
+            <div class="modal-footer">
+                    <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
+                </div>
         </div>
-        <div class="modal-footer">
-            <button id="sign-up" class="bluebtn z-depth-0 btn waves-effect waves-light modal-trigger" type="submit" name="action">Registrarse</button>
-        </div>
-    </div>
+        
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase-app.js"></script>
