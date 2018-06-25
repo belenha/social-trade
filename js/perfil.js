@@ -53,3 +53,37 @@ filePhoto.addEventListener("change", function(e){
     });
 });
 
+var template = '<img class="frameImage col s4 m6 l3 responsive-img" src="__image__">';
+var addPhoto = document.getElementById("add-photo");
+var finalTemplate = "";
+
+addPhoto.addEventListener("change", function(e){
+    //Obtener archivo
+    var file = e.target.files[0];
+    //Crear un almacen ref
+    var storageRef = firebase.storage().ref('media_photo/' + file.name);
+    //Subir foto
+    var task = storageRef.put(file);
+
+    task.on(firebase.storage.TaskEvent.STATE_CHANGED, // or 'state_changed'
+    function(snapshot) {
+        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+        console.log('Upload is ' + progress + '% done');
+    },  
+    function error (err) {
+    }, 
+    function() {
+        // Upload completed successfully, now we can get the download URL
+        task.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+            var srcPhoto = downloadURL;
+            photos(srcPhoto);
+        });
+    });
+
+    function photos(srcPhoto){
+     finalTemplate = template.replace("__image__", srcPhoto );
+     $("#sectionPhotos").append(finalTemplate)   
+    }
+});
+
