@@ -91,3 +91,10 @@ body{
   width: 100%;
 }
 
+.n-margin{
+  margin: 0 !important;
+}
+
+.post{
+  border: 1px solid black;
+}
