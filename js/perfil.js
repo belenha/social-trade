@@ -1,5 +1,3 @@
-$('#profile-photo').src()
-
 //Evento de cerrar sesión
 var btnLogout = document.getElementById("log-out");
 btnLogout.addEventListener("click", e => {
@@ -47,6 +45,39 @@ filePhoto.addEventListener("change", function(e){
             };
         });
     });
+});
+
+// Informacion de usuario
+var database = firebase.database();
+//var userId = firebase.auth().currentUser.uid;
+var userData = document.getElementById("user-data");
+
+userData.addEventListener("click", function(e){
+    var userName = $("#first_name").val();
+    var userLastName = $("#last_name").val();
+    var userPosition =$("#position").val();
+    var userCompany = $("#empresa").val();
+    var userPhone = $("#phone").val();
+    var userCountry = $("#country").val();
+
+    $("#nameUser").html(userName + userLastName);
+    $("#pro-position").html(userPosition);
+    $("#pro-company").html(userCompany);
+    $("#pro-country").html(userCountry);
+    $("#pro-phone").html(userPhone);
+
+
+            /*var userId = firebase.auth().currentUser.uid;
+        
+            saveProfilePhoto(userId, downloadURL);
+
+            function saveProfilePhoto(userId, imageUrl) {
+                var photoUserProfile = firebase.database().ref('users/' + userId).set({
+                    profile_picture : imageUrl
+                });
+            };*/
+        
+    
 });
 
 //Seccion de agregar fotos
