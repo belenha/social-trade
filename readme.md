@@ -3,6 +3,11 @@
 
 Se define como comercio internacional, comercio exterior o comercio mundial al movimiento que tienen los bienes y servicios a través de los distintos países y sus mercados. 
 
+![preview](https://user-images.githubusercontent.com/37427270/45059071-4ec9d800-b060-11e8-924b-b14b379ec0e9.png)
+
+## Desarrollado para 
+[Laboratoria] (http://laboratoria.la)
+
 ## Problemática
 Al ser una actividad que se puede realizar entre distintos países, la problemática es muy extensa.
 
